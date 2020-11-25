@@ -1,0 +1,8 @@
+/libs/
+/target/
+/logs/
+.project
+.classpath
+.settings
+*.csv
+*.log
