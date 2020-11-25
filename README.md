@@ -1,6 +1,14 @@
 # Blockchain System Explorer
 ![BlockchainSystemExplorer Screenshot](blockchainSystemExplorer.png?raw=true "Title")
 
+Blockchain System Explorer that enables researchers to monitor and analyze the status of a blockchain platform. 
+
+Features:
+- Expandable (supports multiple blockchains because of adapter-based approach)
+- Export data
+- Track system data of blockchain nodes via [Telegraf] (https://www.influxdata.com/time-series-platform/telegraf/)
+- Visualize data via [Chronograf] (https://www.influxdata.com/time-series-platform/chronograf/)
+
 Currently supported Blockchains:
   - Ethereum
 
