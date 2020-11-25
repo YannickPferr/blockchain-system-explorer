@@ -1,10 +1,13 @@
 # Blockchain System Explorer
+![BlockchainSystemExplorer Screenshot](blockchainSystemExplorer.png?raw=true "Title")
+
 Currently supported Blockchains:
   - Ethereum
 
 ## How to use
 1. Clone the repo
-2. Execute the Jar File
+2. Create the Jar with: ```mvn install```
+3. Execute the Jar File: ```java -jar target/BlockchainSystemExplorerClient-1.0.jar -c config/BlockchainSystemExplorer.properties```
 
 Jar will automatically download and start all required dependencies. There are a few options regarding the start of the Java Application. You can either configure it via command line arguments or by passing it a config file. There are the following command line options:
 ```
@@ -51,7 +54,10 @@ To do this via the command line, you start the application like this:
 ```
 
 ## Telegraf
-If you want to also gather system data about the machine running the blockchain node, you need to install Telegraf on the remote and specify your Influx address in the Telegraf config file. You can download Telegraf [here](https://portal.influxdata.com/downloads/)
+If you want to also gather system data about the machine running the blockchain node, you need to install Telegraf on the remote and specify your Influx address in the Telegraf config file. You can download Telegraf [here](https://portal.influxdata.com/downloads/).
+
+## Visualization
+You can use Chronograf to visualize your collected data in customized dashboards (see screenshot above). You can also download it [here](https://portal.influxdata.com/downloads/).
   
 ## Commands  
   ### Export data
